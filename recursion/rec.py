@@ -53,6 +53,57 @@ def even_number(n):
 even_number(10)
 
 
+#sum of n natural number
+def sumN(n):
+    if n == 1:
+        return 1
+    else:
+        s =  n + sumN(n-1)
+        return s   
+num = sumN(5)
+print(num)
+
+
+#sum of n odd number
+def sumNodd(n):
+    if n == 1:
+        return 1
+    else:
+        s =  (2*n-1) + sumNodd(n-1)
+        return s   
+num = sumNodd(5)
+print(num)
+
+#sum of n even number
+def sumNeven(n):
+    if n == 0:
+        return 0
+    else:
+        s =  (2*n) + sumNeven(n-1)
+        return s   
+num = sumNeven(5)
+print(num)
+
+#factorial of n number 
+def fac(n):
+    if n==1:
+        return 1
+    else:
+        s = n * fac(n-1)
+        return s
+print(fac(5))
+
+# sum of squares of n natural number
+def sum_square(n):
+    if n==1:
+        return n
+    else:
+        s = n*n + (sum_square(n-1))
+        return s
+print(sum_square(5))
+
+
+
 
 
 
